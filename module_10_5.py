@@ -11,7 +11,7 @@ def read_info(name):
         all_data.append(line)
     file.close()
 
-
+"""
 # Линейный вызов
 start = datetime.datetime.now()
 
@@ -30,7 +30,7 @@ print(end - start)
 
 start = datetime.datetime.now()
 
-if __name__ == "__mane__":
+if __name__ == "__main__":
     with multiprocessing.Pool(processes=2) as pool:
         filenames = [f'./file {number}.txt' for number in range(1, 5)]
         pool.map(read_info, filenames)
@@ -38,7 +38,6 @@ end = datetime.datetime.now()
 print(end - start)
 
 # Время 0:00:00.000004
-"""
 
 
 """
